@@ -9,8 +9,8 @@ Go to chat/channel history folder
 Git clone this script
 
 ```bash
-  git clone ...
-  cd ...
+  git clone https://github.com/realpalyanytsya/telegram-history-parser.git
+  cd telegram-history-parser/
 ```
 
 Install bs4
