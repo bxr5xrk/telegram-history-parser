@@ -13,6 +13,12 @@ Git clone this script
   cd telegram-history-parser/
 ```
 
+Go to script folder
+
+```bash
+  cd telegram-history-parser/
+```
+
 Install bs4
 
 ```bash
