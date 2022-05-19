@@ -7,7 +7,7 @@ words = []
 def findFiles():
     messages = []
     regex = re.compile('^messages[1-9|0-9]*.html$')
-    for root, dirs, files in os.walk('.'):
+    for root, dirs, files in os.walk('../../'):
         for file in files:
             if regex.match(file):
                 messages.append(file)
@@ -21,7 +21,7 @@ def scanFiles(messages):
 
     for file in messages:
 
-        with open(file, 'r') as f:
+        with open('../' + file, 'r') as f:
             soup = bs4.BeautifulSoup(f, "html.parser")
             text = soup.find_all('div', class_='text')
 
@@ -50,6 +50,5 @@ def writeInFile(fileName):
 
 if __name__ == '__main__':
     files = findFiles()
-
     scanFiles(files)
     writeInFile('words.txt')
