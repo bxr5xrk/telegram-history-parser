@@ -10,7 +10,6 @@ Git clone this script
 
 ```bash
   git clone https://github.com/realpalyanytsya/telegram-history-parser.git
-  cd telegram-history-parser/
 ```
 
 Go to script folder
